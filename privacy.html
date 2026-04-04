@@ -1,29 +1,127 @@
-<h1>Privacy Policy</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Santa Fe Public Art</title>
+  <style>
+    :root {
+      --bg: #D1B59E;
+      --text: #1f1a17;
+      --muted: #4e433b;
+      --link: #5c2f1f;
+      --card: rgba(255, 248, 242, 0.42);
+      --border: rgba(31, 26, 23, 0.14);
+      --shadow: rgba(31, 26, 23, 0.10);
+    }
 
-<p>Effective date: April 2026</p>
+    * { box-sizing: border-box; }
 
-<p>Santa Fe Public Art ("the app") respects your privacy. This app is designed to provide information about public artwork in Santa Fe and does not collect personal information from users.</p>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-<h2>Information Collection</h2>
-<p>The app does not collect, store, or share personal data such as names, email addresses, or location data.</p>
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
 
-<h2>Usage Data</h2>
-<p>The app does not use analytics, tracking, or third-party advertising services.</p>
+    .site-shell {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
 
-<h2>Internet Access</h2>
-<p>The app may connect to the internet to retrieve updated artwork information and images. No personally identifiable information is transmitted as part of these requests.</p>
+    .top-nav {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      font-size: 0.98rem;
+    }
 
-<h2>Third-Party Services</h2>
-<p>The app does not integrate with third-party services that collect user data.</p>
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 28px var(--shadow);
+      padding: 34px 32px 28px;
+    }
 
-<h2>Data Storage</h2>
-<p>Any data stored by the app is limited to content necessary for functionality and is stored locally on the device.</p>
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
 
-<h2>Children’s Privacy</h2>
-<p>The app does not knowingly collect personal information from children.</p>
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+    }
 
-<h2>Changes to This Policy</h2>
-<p>This policy may be updated from time to time. Any changes will be posted on this page.</p>
+    .effective-date {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
 
-<h2>Contact</h2>
-<p>If you have questions, contact: Pamg@PublicArtMobileGuides.com</p>
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="top-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+
+    <main class="content">
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective date: April 2026</p>
+
+      <p>Santa Fe Public Art ("the app") respects your privacy. This app is designed to provide information about public artwork in Santa Fe and does not collect personal information from users.</p>
+
+      <h2>Information Collection</h2>
+      <p>The app does not collect, store, or share personal data such as names, email addresses, or location data.</p>
+
+      <h2>Usage Data</h2>
+      <p>The app does not use analytics, tracking, or third-party advertising services.</p>
+
+      <h2>Internet Access</h2>
+      <p>The app may connect to the internet to retrieve updated artwork information and images. No personally identifiable information is transmitted as part of these requests.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>The app does not integrate with third-party services that collect user data.</p>
+
+      <h2>Data Storage</h2>
+      <p>Any data stored by the app is limited to content necessary for functionality and is stored locally on the device.</p>
+
+      <h2>Children’s Privacy</h2>
+      <p>The app does not knowingly collect personal information from children.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>This policy may be updated from time to time. Any changes will be posted on this page.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions, contact: <a href="mailto:Pamg@PublicArtMobileGuides.com">Pamg@PublicArtMobileGuides.com</a></p>
+    </main>
+
+    <footer class="footer">
+      Copyright © Public Art Mobile Guides, LLC
+    </footer>
+  </div>
+</body>
+</html>

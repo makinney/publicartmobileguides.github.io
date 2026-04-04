@@ -1,29 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support — Santa Fe Public Art</title>
+  <style>
+    :root {
+      --bg: #D1B59E;
+      --text: #1f1a17;
+      --muted: #4e433b;
+      --link: #5c2f1f;
+      --card: rgba(255, 248, 242, 0.42);
+      --border: rgba(31, 26, 23, 0.14);
+      --shadow: rgba(31, 26, 23, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .site-shell {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      font-size: 0.98rem;
+    }
+
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 28px var(--shadow);
+      padding: 34px 32px 28px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.35rem;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-email {
+      font-size: 1.08rem;
+      font-weight: 600;
+    }
+
+    .qa p {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
-<body style="font-family: system-ui; max-width: 600px; margin: 40px auto; line-height: 1.5;">
+<body>
+  <div class="site-shell">
+    <nav class="top-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
 
-  <h1>Support</h1>
+    <main class="content">
+      <h1>Support</h1>
 
-  <p>If you need help with Santa Fe Public Art, contact:</p>
-  <p><strong>Pamg@PublicArtMobileGuides.com</strong></p>
+      <p>If you need help with Santa Fe Public Art, contact:</p>
+      <p class="contact-email"><a href="mailto:Pamg@PublicArtMobileGuides.com">Pamg@PublicArtMobileGuides.com</a></p>
 
-  <h2>Using the App</h2>
-  <p>The app provides tips as you use it to help you explore features such as browsing artwork, viewing details, and navigating the gallery.</p>
+      <h2>Using the App</h2>
+      <p>The app provides tips as you use it to help you explore features such as browsing artwork, viewing details, and navigating the gallery.</p>
 
-  <h2>Common Questions</h2>
+      <h2>Common Questions</h2>
+      <div class="qa">
+        <p><strong>Content not loading?</strong><br>
+        Make sure you have an internet connection, then use the Refresh option in the app.</p>
 
-  <p><strong>Content not loading?</strong><br>
-  Make sure you have an internet connection, then use the Refresh option in the app.</p>
+        <p><strong>Incorrect or missing artwork?</strong><br>
+        Content is updated over time. You can refresh the app to check for updates.</p>
 
-  <p><strong>Incorrect or missing artwork?</strong><br>
-  Content is updated over time. You can refresh the app to check for updates.</p>
+        <p><strong>App feedback</strong><br>
+        Suggestions are welcome via email.</p>
+      </div>
+    </main>
 
-  <p><strong>App feedback</strong><br>
-  Suggestions are welcome via email.</p>
-
+    <footer class="footer">
+      Copyright © Public Art Mobile Guides, LLC
+    </footer>
+  </div>
 </body>
 </html>
